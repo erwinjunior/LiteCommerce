@@ -1,0 +1,17 @@
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.BusinessLayers.deps.json
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.BusinessLayers.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.BusinessLayers.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.DataLayers.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.DomainModels.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.DataLayers.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\bin\Debug\net8.0\SV20T1020136.DomainModels.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.csproj.AssemblyReference.cache
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.AssemblyInfoInputs.cache
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.AssemblyInfo.cs
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.csproj.CoreCompileInputs.cache
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.csproj.CopyComplete
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\refint\SV20T1020136.BusinessLayers.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\SV20T1020136.BusinessLayers.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.BusinessLayers\obj\Debug\net8.0\ref\SV20T1020136.BusinessLayers.dll

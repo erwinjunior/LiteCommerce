@@ -1,0 +1,103 @@
+﻿@model SV20T1020136.DomainModels.Order
+@{
+    ViewBag.Title = "Cập nhật thông tin đơn hàng";
+    int rowCount = 0;
+}
+
+<div class="box box-primary">
+    <div class="box-body">
+        <form action="~/Order/Save" method="post">
+            @Html.HiddenFor(m => m.OrderID)
+            @Html.HiddenFor(m => m.Status)
+            @*Chỉ được cập nhật tên khách hàng khi đơn hàng đang ở trạng thái khởi tạo*@
+            @if (Model.Status == SV20T1020136.DomainModels.Constants.ORDER_INIT)
+            {
+                <div class="form-group">
+                    <label>Tên khách hàng: </label>
+                    <select class="form-control" name="customerID">
+                        @{
+                            var customerList = SV20T1020136.BusinessLayers.CommonDataService
+                            .ListOfCustomers(out rowCount);
+
+                            foreach (var item in customerList)
+                            {
+                                if (item.CustomerName == Model.CustomerName)
+                                {
+                                    <option selected value="@item.CustomerID">@item.CustomerName</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.CustomerID">@item.CustomerName</option>
+                                }
+                            }
+
+                        }
+                    </select>
+                </div>
+            }
+            @*Chỉ có thể cập nhật thông tin tỉnh thành, địa chỉ giao hàng khi đơn hàng ở trạng thái
+            khởi tạo hoặc đã chấp nhận*@
+            @if (Model.Status == SV20T1020136.DomainModels.Constants.ORDER_INIT ||
+            Model.Status == SV20T1020136.DomainModels.Constants.ORDER_ACCEPTED)
+            {
+                <div class="form-group">
+                    <label>Địa chỉ giao hàng: </label>
+                    <input type="text" class="form-control" name="deliveryAddress" value="@Model.DeliveryAddress" />
+                    @Html.ValidationMessage(nameof(Model.DeliveryAddress), new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label>Tỉnh / thành: </label>
+                    <select class="form-control" name="deliveryProvince">
+                        @{
+                            var provinceList = SV20T1020136.BusinessLayers.CommonDataService.ListOfProvinces();
+                            foreach (var item in provinceList)
+                            {
+                                if (item.ProvinceName == Model.DeliveryProvince)
+                                {
+                                    <option selected value="@item.ProvinceName">@item.ProvinceName</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.ProvinceName">@item.ProvinceName</option>
+                                }
+
+                            }
+                        }
+                    </select>
+                </div>
+            }
+            @*Có thể thay đổi thông tin Shipper khi đơn hàng ở trạng thái đang vận chuyển*@
+            @if (Model.Status == SV20T1020136.DomainModels.Constants.ORDER_SHIPPING)
+            {
+                <div class="form-group">
+                    <label>Người giao hàng: </label>
+                    <select class="form-control" name="shipperID">
+                        @{
+                            var shipperList = SV20T1020136.BusinessLayers.CommonDataService.ListOfShippers(out rowCount);
+                            foreach (var item in shipperList)
+                            {
+                                if (item.ShipperName == Model.ShipperName)
+                                {
+                                    <option selected value="@item.ShipperID">@item.ShipperName</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.ShipperID">@item.ShipperName</option>
+                                }
+
+                            }
+                        }
+                    </select>
+                </div>
+            }
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-floppy-o"></i>
+                    Lưu dữ liệu
+                </button>
+                <a href="~/Order/Details/@Model.OrderID" class="btn btn-default"><i class="fa fa-arrow-left"></i> Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

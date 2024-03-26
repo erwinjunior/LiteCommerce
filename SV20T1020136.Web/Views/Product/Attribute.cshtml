@@ -1,0 +1,48 @@
+﻿@model SV20T1020136.DomainModels.ProductAttribute
+
+<div class="box box-primary">
+    <div class="box-body">
+        <form class="form-horizontal" method="post" action="~/Product/Attribute/@Model.ProductID?method=save">
+            @Html.HiddenFor(m => m.ProductID)
+            @Html.HiddenFor(m => m.AttributeID)
+            <div class="form-group">
+                <label class="control-label col-sm-2">Tên thuộc tính:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="AttributeName" value="@Model.AttributeName">
+                    @Html.ValidationMessage(nameof(Model.AttributeName), new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Giá trị thuộc tính:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="AttributeValue" value="@Model.AttributeValue">
+                    @Html.ValidationMessage(nameof(Model.AttributeValue), new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2">Thứ tự hiển thị:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" name="DisplayOrder" value="@Model.DisplayOrder">
+                    @Html.ValidationMessage(nameof(Model.DisplayOrder), new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-floppy-o"></i>
+                        Lưu dữ liệu
+                    </button>
+                    <a href="~/Product/Edit/@Model.ProductID" class="btn btn-default">
+                        <i class="fa fa-arrow-left"></i>
+                        Quay lại
+                    </a>
+                </div>
+            </div>
+            @Html.ValidationMessage("SaveError", new { @class = "text-danger" })
+        </form>
+
+    </div>
+</div>

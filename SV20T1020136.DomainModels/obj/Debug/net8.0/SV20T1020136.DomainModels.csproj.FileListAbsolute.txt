@@ -1,0 +1,11 @@
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\bin\Debug\net8.0\SV20T1020136.DomainModels.deps.json
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\bin\Debug\net8.0\SV20T1020136.DomainModels.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\bin\Debug\net8.0\SV20T1020136.DomainModels.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.AssemblyInfoInputs.cache
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.AssemblyInfo.cs
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.csproj.CoreCompileInputs.cache
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\refint\SV20T1020136.DomainModels.dll
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\SV20T1020136.DomainModels.pdb
+E:\Learn\dotnet\SV20T1020136\SV20T1020136.DomainModels\obj\Debug\net8.0\ref\SV20T1020136.DomainModels.dll
